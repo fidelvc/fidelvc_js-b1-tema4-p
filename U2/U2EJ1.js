@@ -27,8 +27,12 @@ Ten en cuenta que, aunque la página de Wikipedia no tiene restricciones de CORS
 */
 
 //Escribe aquí tu solución / escriviu aquí la vostra solució:
+async function JSData(){
+  let response = await fetch('https://en.wikipedia.org/w/api.php?action=opensearch&search=JavaScript&format=json&origin=*');
+  return await response.json();
+}
 
-
+JSData();
 /**
  * TEST
  * The purpose of this code is purely for TESTING PURPOSES, 
