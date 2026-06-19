@@ -26,6 +26,14 @@
 
 //Escribe aquí tu solución / escriviu aquí la vostra solució:
 
+function fetchOctocatUsingThen(){
+  fetch('https://api.github.com/users/octocat')
+  .then(response => response.json())
+  //.then(data => data)
+}
+
+//fetchOctocatUsingThen();
+
 
 /**
  * TEST
